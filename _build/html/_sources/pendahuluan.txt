@@ -10,12 +10,11 @@ Pendahuluan
 Seputar WebGIS
 ===============
 
-You may already have sphinx `sphinx <http://sphinx.pocoo.org/>`_
-installed -- you can check by doing:
+Definisi Wikipedia: Web mapping is the process of using maps delivered by geographical information systems (GIS). Since a web map on the World Wide Web is both served and consumed, web mapping is more than just web cartography, it is both a service activity and consumer activity.
 
  
 
-.. _seputar-webgis:
+.. _seputar-webgis1:
 
 Seputar WebGIS
 ===============
@@ -26,7 +25,7 @@ installed -- you can check by doing:
 
 
 
-.. _seputar-webgis:
+.. _seputar-webgis2:
 
 Seputar WebGIS
 ===============
