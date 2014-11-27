@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>Getting started &mdash; WebGIS Workshop 2014 1.0 documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+
+<link rel="stylesheet" href="_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="_static/css/bootstrap3/bootswatch-flatly.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" href="_static/css/adjust_theme/bootswatch-flatly.css" type="text/css" />
+
+<link rel="stylesheet" href="_static/css/font-awesome.min.css">
+
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="_static/css/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    './',
+            VERSION:     '1.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="WebGIS Workshop 2014 1.0 documentation" href="index.html" />
+    <link rel="prev" title="WebGIS Workshop 2014" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div id="navbar-top" class="navbar navbar-fixed-top navbar-default" role="navigation" aria-label="top navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">WebGIS Workshop 2014 1.0 documentation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">Getting started</a><ul>
+<li><a class="reference internal" href="#installing-your-doc-directory">Installing your doc directory</a><ul>
+<li><a class="reference internal" href="#fetching-the-data">Fetching the data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
+            <li><a href="#" data-toggle="modal" data-target=".debug-modal">quick preview</a></li>
+
+            
+              <li><a href="index.html" title="WebGIS Workshop 2014" accesskey="P">previous </a></li>
+              <li><a href="genindex.html" title="General Index" accesskey="I">index </a></li>
+            
+            <li class="visible-xs"><a href="_sources/getting_started.txt" rel="nofollow">Show Source</a></li>
+
+            <li class="visible-xs">
+                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="search.html" method="get">
+                  <div class="input-append input-group">
+                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <input type="submit" class="btn" value="Go" />
+                    </span>
+                  </div>
+                  <input type="hidden" name="check_keywords" value="yes" />
+                  <input type="hidden" name="area" value="default" />
+                </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+      <!-- row -->
+      <div class="row">
+        
+        
+
+        <div class="col-md-9">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="getting-started">
+<span id="id1"></span><h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installing-your-doc-directory">
+<span id="installing-docdir"></span><h2>Installing your doc directory<a class="headerlink" href="#installing-your-doc-directory" title="Permalink to this headline">¶</a></h2>
+<p>You may already have sphinx <a class="reference external" href="http://sphinx.pocoo.org/">sphinx</a>
+installed &#8211; you can check by doing:</p>
+<div class="highlight-python"><div class="highlight"><pre>python -c &#39;import sphinx&#39;
+</pre></div>
+</div>
+<p>If that fails grab the latest version of and install it with:</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt; sudo easy_install -U Sphinx
+</pre></div>
+</div>
+<p>Now you are ready to build a template for your docs, using
+sphinx-quickstart:</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt; sphinx-quickstart
+</pre></div>
+</div>
+<p>accepting most of the defaults.  I choose &#8220;sampledoc&#8221; as the name of my
+project.  cd into your new directory and check the contents:</p>
+<div class="highlight-python"><div class="highlight"><pre>home:~/tmp/sampledoc&gt; ls
+Makefile      _static         conf.py
+_build                _templates      index.rst
+</pre></div>
+</div>
+<p>The index.rst is the master ReST for your project, but before adding
+anything, let&#8217;s see if we can build some html:</p>
+<div class="highlight-python"><div class="highlight"><pre>make html
+</pre></div>
+</div>
+<p>If you now point your browser to <code class="file docutils literal"><span class="pre">_build/html/index.html</span></code>, you
+should see a basic sphinx site.</p>
+<img alt="_images/basic_screenshot.png" src="_images/basic_screenshot.png" />
+<div class="section" id="fetching-the-data">
+<span id="id2"></span><h3>Fetching the data<a class="headerlink" href="#fetching-the-data" title="Permalink to this headline">¶</a></h3>
+<p>Now we will start to customize out docs.  Grab a couple of files from
+the <a class="reference external" href="https://github.com/matplotlib/sampledoc">web site</a>
+or git.  You will need <code class="file docutils literal"><span class="pre">getting_started.rst</span></code> and
+<code class="file docutils literal"><span class="pre">_static/basic_screenshot.png</span></code>.  All of the files live in the
+&#8220;completed&#8221; version of this tutorial, but since this is a tutorial,
+we&#8217;ll just grab them one at a time, so you can learn what needs to be
+changed where.  Since we have more files to come, I&#8217;m going to grab
+the whole git directory and just copy the files I need over for now.
+First, I&#8217;ll cd up back into the directory containing my project, check
+out the &#8220;finished&#8221; product from git, and then copy in just the files I
+need into my <code class="file docutils literal"><span class="pre">sampledoc</span></code> directory:</p>
+<div class="highlight-python"><div class="highlight"><pre>home:~/tmp/sampledoc&gt; pwd
+/Users/jdhunter/tmp/sampledoc
+home:~/tmp/sampledoc&gt; cd ..
+home:~/tmp&gt; git clone https://github.com/matplotlib/sampledoc.git tutorial
+Cloning into &#39;tutorial&#39;...
+remote: Counting objects: 87, done.
+remote: Compressing objects: 100% (43/43), done.
+remote: Total 87 (delta 45), reused 83 (delta 41)
+Unpacking objects: 100% (87/87), done.
+Checking connectivity... done
+home:~/tmp&gt; cp tutorial/getting_started.rst sampledoc/
+home:~/tmp&gt; cp tutorial/_static/basic_screenshot.png sampledoc/_static/
+</pre></div>
+</div>
+<p>The last step is to modify <code class="file docutils literal"><span class="pre">index.rst</span></code> to include the
+<code class="file docutils literal"><span class="pre">getting_started.rst</span></code> file (be careful with the indentation, the
+&#8220;g&#8221; in &#8220;getting_started&#8221; should line up with the &#8216;:&#8217; in <code class="docutils literal"><span class="pre">:maxdepth</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre>Contents:
+
+.. toctree::
+   :maxdepth: 2
+
+   getting_started.rst
+</pre></div>
+</div>
+<p>and then rebuild the docs:</p>
+<div class="highlight-python"><div class="highlight"><pre>cd sampledoc
+make html
+</pre></div>
+</div>
+<p>When you reload the page by refreshing your browser pointing to
+<code class="file docutils literal"><span class="pre">_build/html/index.html</span></code>, you should see a link to the
+&#8220;Getting Started&#8221; docs, and in there this page with the screenshot.
+<cite>Voila!</cite></p>
+<p>Note we used the image directive to include to the screenshot above
+with:</p>
+<div class="highlight-python"><div class="highlight"><pre>.. image:: _static/basic_screenshot.png
+</pre></div>
+</div>
+<p>Next we&#8217;ll customize the look and feel of our site to give it a logo,
+some custom css, and update the navigation panels to look more like
+the <a class="reference external" href="http://sphinx.pocoo.org/">sphinx</a> site itself &#8211; see
+<em class="xref std std-ref">custom_look</em>.</p>
+</div>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+<div class="col-md-3 hidden-xs">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+    <p class="logo"><a href="index.html">
+      <img class="logo" src="_static/ugm_logo2.png" alt="Logo"/>
+    </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Getting started</a><ul>
+<li><a class="reference internal" href="#installing-your-doc-directory">Installing your doc directory</a><ul>
+<li><a class="reference internal" href="#fetching-the-data">Fetching the data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">WebGIS Workshop 2014</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/getting_started.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="search.html" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div> 
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row footer-relbar">
+<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav navbar-nav">
+        <li><a href="index.html">WebGIS Workshop 2014 1.0 documentation</a></li>
+    </ul>
+    <ul class="nav navbar-nav pull-right hidden-xs hidden-sm">
+      
+        <li><a href="index.html" title="WebGIS Workshop 2014" >previous</a></li>
+        <li><a href="genindex.html" title="General Index" >index</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; Copyright 2014, Dany.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3b1.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+<div class="modal fade debug-modal" style="display:none;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <p class="modal-title" id="myLargeModalLabel">Quick inner theme preview</p>
+      </div>
+
+      <div class="modal-body">
+
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+            <select id="select-theme" class="form-control" style="width:200px;">
+              <option value="">default</option>
+              <option value="bootswatch-amelia">bootswatch-amelia</option>
+              <option value="bootswatch-cerulean">bootswatch-cerulean</option>
+              <option value="bootswatch-cosmo">bootswatch-cosmo</option>
+              <option value="bootswatch-cyborg">bootswatch-cyborg</option>
+              <option value="bootswatch-flatly">bootswatch-flatly</option>
+              <option value="bootswatch-journal">bootswatch-journal</option>
+              <option value="bootswatch-readable">bootswatch-readable</option>
+              <option value="bootswatch-simplex">bootswatch-simplex</option>
+              <option value="bootswatch-slate">bootswatch-slate</option>
+              <option value="bootswatch-spacelab">bootswatch-spacelab</option>
+              <option value="bootswatch-superhero">bootswatch-superhero</option>
+              <option value="bootswatch-united">bootswatch-united</option>
+              <option value="bootswatch-paper">bootswatch-paper</option>
+              <option value="bootswatch-sandstone">bootswatch-sandstone</option>
+              <option value="bootswatch-darkly">bootswatch-darkly</option>
+              <option value="bootswatch-lumen">bootswatch-lumen</option>
+              <option value="bootswatch-yeti">bootswatch-yeti</option>
+            </select><br />
+          </div>
+          <div class="checkbox">
+             &nbsp;
+            <label>
+              &nbsp;<input type="checkbox" id="select-header-inverse"> Header inverse color
+            </label>
+          </div>
+          <div class="checkbox">
+            &nbsp;
+            <label>
+              &nbsp;<input type="checkbox" id="select-relbar-inverse"> Relbar inverse color
+            </label>
+          </div>
+        </form>
+        <span id="bootstrap-version" style="display:none">3</span>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  </body>
+</html>
