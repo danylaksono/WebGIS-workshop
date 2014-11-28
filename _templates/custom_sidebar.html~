@@ -1,3 +1,5 @@
 <ul class="globaltoc">
-{{ toctree(maxdepth=-1, collapse=True, includehidden=theme_globaltoc_includehidden|tobool) }}
+{{ toctree(maxdepth=-1, collapse=True, includehidden=True) }} 
 </ul>
+
+

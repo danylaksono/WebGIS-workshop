@@ -4,7 +4,14 @@
 Pendahuluan
 ***************
 
+.. raw:: html
+
+   <hr></br>
+
 pendahuluan pokokmen
+
+isine pendahuluan
+==================
 
 
 .. raw:: latex

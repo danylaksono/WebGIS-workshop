@@ -6,13 +6,12 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Panduan Dasar Github? &mdash; WebGIS Workshop 2014 1.0 documentation</title>
+    <title>Panduan Dasar Github &mdash; WebGIS Workshop 2014 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootswatch-3.2.0/flatly/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -69,8 +68,21 @@
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="pendahuluan.html">Pendahuluan</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Panduan Dasar Github?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pendahuluan.html">Pendahuluan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pendahuluan.html#isine-pendahuluan">isine pendahuluan</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Panduan Dasar Github</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tentang-git">Tentang Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#menggunakan-github">Menggunakan Github</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#instalasi-pada-windows">Instalasi pada Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mengatur-ssh-key">Mengatur SSH Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bekerja-dengan-repository">Bekerja dengan Repository</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rujukan">Rujukan</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="bootstrap.html">Bekerja dengan Bootstrap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="leaflet.html">Peta Online dengan Leaflet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lisensi.html">Lisensi Dokumen (GFDL V.1.3)</a></li>
@@ -87,7 +99,17 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Panduan Dasar Github?</a></li>
+<li><a class="reference internal" href="#">Panduan Dasar Github</a><ul>
+<li><a class="reference internal" href="#tentang-git">Tentang Git</a></li>
+<li><a class="reference internal" href="#menggunakan-github">Menggunakan Github</a><ul>
+<li><a class="reference internal" href="#instalasi-pada-windows">Instalasi pada Windows</a></li>
+<li><a class="reference internal" href="#mengatur-ssh-key">Mengatur SSH Key</a></li>
+<li><a class="reference internal" href="#bekerja-dengan-repository">Bekerja dengan Repository</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rujukan">Rujukan</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -118,32 +140,61 @@
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc">
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="pendahuluan.html">Pendahuluan</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Panduan Dasar Github?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pendahuluan.html">Pendahuluan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pendahuluan.html#isine-pendahuluan">isine pendahuluan</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Panduan Dasar Github</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tentang-git">Tentang Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#menggunakan-github">Menggunakan Github</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#instalasi-pada-windows">Instalasi pada Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mengatur-ssh-key">Mengatur SSH Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bekerja-dengan-repository">Bekerja dengan Repository</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rujukan">Rujukan</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="bootstrap.html">Bekerja dengan Bootstrap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="leaflet.html">Peta Online dengan Leaflet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lisensi.html">Lisensi Dokumen (GFDL V.1.3)</a></li>
 </ul>
-
-</ul><ul>
-<li><a class="reference internal" href="#">Panduan Dasar Github?</a></li>
+ 
 </ul>
 
-<form action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
+
         </div>
       </div>
     <div class="col-md-9">
       
   <div class="section" id="panduan-dasar-github">
-<span id="git"></span><h1>Panduan Dasar Github?<a class="headerlink" href="#panduan-dasar-github" title="Permalink to this headline">¶</a></h1>
+<span id="git"></span><h1>Panduan Dasar Github<a class="headerlink" href="#panduan-dasar-github" title="Permalink to this headline">¶</a></h1>
+<hr></br><div class="section" id="tentang-git">
+<h2>Tentang Git<a class="headerlink" href="#tentang-git" title="Permalink to this headline">¶</a></h2>
 <p>Dokumen ini didesain sebagai panduan pada saat <strong>&#8220;Workshop WebGIS&#8221;</strong>
 oleh PPIDS-UGM dan Klub WebGIS Teknik Geodesi UGM.</p>
+</div>
+<div class="section" id="menggunakan-github">
+<h2>Menggunakan Github<a class="headerlink" href="#menggunakan-github" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="instalasi-pada-windows">
+<h3>Instalasi pada Windows<a class="headerlink" href="#instalasi-pada-windows" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="mengatur-ssh-key">
+<h3>Mengatur SSH Key<a class="headerlink" href="#mengatur-ssh-key" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="bekerja-dengan-repository">
+<h3>Bekerja dengan Repository<a class="headerlink" href="#bekerja-dengan-repository" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="rujukan">
+<span id="ref-git"></span><h2>Rujukan<a class="headerlink" href="#rujukan" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://help.github.com/categories/bootcamp/">https://help.github.com/categories/bootcamp/</a></li>
+<li><a class="reference external" href="http://git-scm.com/book/en/v2">http://git-scm.com/book/en/v2</a></li>
+<li><a class="reference external" href="https://www.atlassian.com/git/tutorials/">https://www.atlassian.com/git/tutorials/</a></li>
+<li><a class="reference external" href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a></li>
+</ul>
+</div>
 </div>
 
 

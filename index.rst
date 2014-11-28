@@ -8,8 +8,14 @@
 Panduan Workshop WebGIS 2014
 *****************************
 
-Dokumen ini didesain sebagai panduan pada saat **"Workshop WebGIS"**
-oleh PPIDS-UGM dan Klub WebGIS Teknik Geodesi UGM.
+.. raw:: html
+
+   <hr></br>
+
+
+Dokumen ini didesain sebagai panduan untuk **"Workshop WebGIS"**
+oleh PPIDS-UGM dan Klub WebGIS Teknik Geodesi UGM yang diselenggarakan pada
+tanggal 29 November 2014.
 
 
 .. _konten-workshop:
@@ -19,7 +25,7 @@ Konten Workshop
 
 .. toctree::
    :maxdepth: 2
-   
+
    pendahuluan.rst
    git.rst
    bootstrap.rst
@@ -109,5 +115,6 @@ License, Versi 1.3 atau seterusnya. Lisensi lengkap dapat dilihat pada bagian
 
 
 .. raw:: latex
-   
+
    \pagebreak[4]
+

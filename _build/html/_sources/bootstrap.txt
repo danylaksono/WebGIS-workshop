@@ -4,6 +4,9 @@
 Bekerja dengan Bootstrap
 *************************
 
+.. raw:: html
+
+   <hr></br>
 
 .. raw:: latex
    
