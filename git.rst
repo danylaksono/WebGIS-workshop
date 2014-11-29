@@ -11,33 +11,155 @@ Panduan Dasar Github
 Tentang Git
 ==============
 
-Dokumen ini didesain sebagai panduan pada saat **"Workshop WebGIS"**
-oleh PPIDS-UGM dan Klub WebGIS Teknik Geodesi UGM.
+**Git** merupakan sistem Source Code Management (SCM) dan Version Control
+yang bersifat bebas dan terbuka (*free and open source*). Git didesain
+untuk fleksibilitas manajemen kode dalam skala kecil hingga skala besar,
+sambil tetap menjaga kecepatan proses yang dibutuhkan.
+
+Setiap *'repository'* pada sistem Git merupakan penyimpanan kode mandiri
+yang memiliki kemampuan pelacakan dan *history*, disamping dukungan penuh untuk
+mewadahi kontributor dalam jumlah yang banyak.
+
+**Github** merupakan layanan repository Git dengan berbagai fungsionalitasnya
+ditambah dengan fungsi-fungsi lain yang memperkaya manajemen kode pada
+Github. Karena kelengkapan fungsi dan sifatnya yang gratis inilah maka Github
+seringkali dipercaya untuk menyimpan kode dari berbagai perangkat lunak *Open
+Source*, dimana Github memungkinkan semua orang untuk turut berkontribusi
+pada suatu project.
+
+Salah satu fungsi Github yang sangat menguntungkan dalam pembuatan halaman
+web adalah: Github dapat digunakan sebagai sebuah hosting gratis, dengan
+sebuah alamat domain yang juga gratis (``namapengguna.github.io``).
 
 
 Menggunakan Github
 ===================
 
-=======================
-Instalasi pada Windows
-=======================
-
-================
-Mengatur SSH Key
-================
-
 ==========================
 Bekerja dengan Repository
 ==========================
 
+Pada bagian ini anda akan mulai menggunakan Github untuk menyimpan kode project anda.
+
+1. Buat akun Github anda melalui alamat `<http://www.github.com>`_
+
+.. image:: _static/images/git_github-webpages.png
+   :align: center
+   :width: 500 pt
+
+2. Lakukan pengaturan yang diperlukan pada halaman `<https://github.com/settings/profile>`_
+
+3. Buat repository baru. Pastikan nama repository yang anda buat mengikuti format ``namapengguna.github.io``.  Apabila nama pengguna anda adalah **'ppids-ugm'** maka nama repository yang akan anda buat ini bernama ``ppids-ugm.github.io``.
+
+.. image:: _static/images/git_new-repo.png
+   :align: center
+
+Beri tanda centang pada **Initialize this repository with README**.
+   
+4. Sekarang, anda telah memiliki sebuah repository baru. Anda dapat mengisikan project anda pada repository ini. Sebagai langkah pertama, buat file baru (klik tanda ``+`` di samping nama repository anda), kemudian copykan kode berikut:
+
+.. highlight:: html
+.. literalinclude:: ./_static/webpage/digitalclock.html
+   :linenos:
+   
+Simpan file baru tersebut dengan nama ``index.html`` dan lakukan *commit* pertama anda.
+
+Sampai di sini, anda telah membuat sebuah repository dan mengisikan sebuah
+file HTML pada repository tersebut. Latihan selanjutnya adalah bagaimana memodifikasi isi dari repository ini untuk menampung
+kode yang akan kita gunakan pada halaman web kita.
+
+.. note:: Tunggu beberapa menit (atau beberapa belas menit) dan Github akan menyajikan halaman web anda pada alamat ``http://<nama-username-anda>.github.io``.
+
+=======================
+Instalasi pada Windows
+=======================
+
+Panduan untuk instalasi Github pada Windows dapat anda temukan `di sini
+<http://www.geekgumbo.com/2010/04/09/installing-git-on-windows/>`_
+
+Setelah melakukan instalasi, anda juga perlu mengatur SSH Key pada Git Bash
+dan pada Akun Github anda. Silahkan ikuti panduan `di alamat ini
+<http://guides.beanstalkapp.com/version-control/git-on-windows.html>`_.
+
+Untuk memeriksa instalasi, buka Git Bash dan ketikkan ``git --version``
+pada jendela command yang muncul.
 
 
+Bekerja dengan Github
+======================
 
-.. _ref-git: 
+==============================
+Melakukan kloning repository
+==============================
+
+1. Pada halaman web repository anda, cari menu bertuliskan ``SSH Clone URL`` pada bagian kanan. Copykan teks pada kotak yang disediakan. Teks tersebut terlihat seperti ini::
+
+        git@github.com:ppids-ugm/ppids-ugm.github.io.git
+
+2. Buka ``Git Bash`` anda, kemudian ketikkan perintah::
+
+        git clone git@github.com:ppids-ugm/ppids-ugm.github.io.git
+        
+(sesuaikan dengan teks yang telah anda copy dari repository anda masing-masing. Ganti ``ppids-ugm`` di atas dengan  ``username-anda``)
+
+3. Cari folder ``username-anda.github,io`` pada Windows Explorer. Folder ini merupakan repository lokal, salinan dari repository yang ada pada web Github.
+
+4. Buatlah satu file baru pada folder tersebut. Simpan dengan nama ``latihan-git.txt`` dan isi dengan teks::
+
+        File ini ditambahkan dari repositori lokal
+
+.. danger:: Rangkaian perintah berikut sangat penting untuk anda ingat
+
+5. Ketikkan perintah ``git pull``. Perintah ini berfungsi untuk mensinkronkan repository pada github dengan repository lokal anda. Apabila didapati ada perubahan pada repository Github, perubahan tersebut akan diterapkan pada repository lokal.
+
+6. Ketikkan perintah ``git add --all``. Perintah ini digunakan apabila anda menambahkan file baru pada repository lokal anda dan ingin agar file ini juga tersimpan pada repository Github
+
+7. Ketikkan perintah ``git commit -am "commit pertama"``. Perintah ini digunakan untuk menyimpan perubahan yang anda lakukan pada repository lokal. Perubahan ini akan disimpan pada *stage*, dan belum berpengaruh pada repository anda di Github. Perintah dalam tanda kutip adalah pesan yang akan tersimpan setiap kali anda melakukan ``commit``. Gunakan pesan ini sebagai penanda perubahan yang telah anda lakukan pada *commit* tersebut
+
+8. Ketikkan perintah ``git push``. Perintah ini digunakan untuk 'mendorong' perubahan yang telah anda lakukan di repository lokal ke repository pada Github
+
+Buka halaman web repository anda pada Github dan pastikan bahwa file yang anda buat (``latihan-git.txt``) telah ditambahkan.
+
+==============================
+Melakukan Fork repository
+==============================
+
+1. Buka halaman `https://github.com/danylaksono/latihan-webgis`
+
+2. Klik tombol ``Fork`` pada bagian kanan atas halaman
+
+.. image:: _static/images/git_fork.png
+   :align: center
+
+3. Akan muncul repository baru pada halaman anda yang merupakan salinan dari repository ``github.danylaksono/latihan-webgis``.
+
+.. image:: _static/images/git_forked.png
+   :align: center
+
+4. Lakukan ``Cloning`` dari repository anda ini sebagaimana pada langkah sebelumnya::
+
+        **git clone** git@github.com:ppids-ugm/latihan-webgis.git
+        
+Anda akan memperoleh salinan lokal dari repository anda, yang juga merupakan salinan dari repository ``danylaksono/latihan-webgis``. Sampai di sini anda telah melakukan langkah awal dari penggunaan Github untuk project yang melibatkan beberapa orang sekaligus. Langkah selanjutnya dapat anda pelajari pada rujukan di bawah halaman ini.
+
+
+What's Next?
+=============
+
+Pembahasan mengenai Github tidak selesai sampai di sini. Rujukan di bagian
+bawah halaman ini dapat anda gunakan untuk mempelajari fungsi-fungsi lain dari
+Github, terutama apabila anda bekerja dalam sebuah project.
+
+.. image:: _static/images/git_fork-workflow.png
+   :align: center
+
+
+.. _ref-git:
 
 Rujukan
 =======
 
+* http://en.wikipedia.org/wiki/GitHub
 * https://help.github.com/categories/bootcamp/
 * http://git-scm.com/book/en/v2
 * https://www.atlassian.com/git/tutorials/
@@ -45,5 +167,6 @@ Rujukan
 
 
 .. raw:: latex
-   
+
    \pagebreak[4]
+

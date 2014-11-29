@@ -163,7 +163,7 @@ html_theme_options = {# Navigation bar title. (Default: ``project`` value)
     #
     # Options are nothing with "" (default) or the name of a valid theme
     # such as "amelia" or "cosmo".
-    'bootswatch_theme': "flatly",
+    'bootswatch_theme': "cerulean",
 
     # Choose Bootstrap version.
     # Values: "3" (default) or "2" (in quotes)
@@ -209,7 +209,7 @@ html_static_path = ['_static']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-html_sidebars = {'**': ['custom_sidebar.html'], 'using/windows': ['windowssidebar.html', 'searchbox.html'],}
+html_sidebars = {'**': ['custom_sidebar.html'] }
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.

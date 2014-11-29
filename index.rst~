@@ -17,16 +17,18 @@ Dokumen ini didesain sebagai panduan untuk **"Workshop WebGIS"**
 oleh PPIDS-UGM dan Klub WebGIS Teknik Geodesi UGM yang diselenggarakan pada
 tanggal 29 November 2014.
 
+Data untuk latihan `tersedia di sini <http://tinyurl.com/nhx4j52>`_. Modul ini akan terus diperbarui untuk menambahkan
+berbagai materi baru pada Workshop WebGIS selanjutnya
+
 
 .. _konten-workshop:
 
-Konten Workshop
+Daftar Materi
 ================
 
 .. toctree::
    :maxdepth: 2
 
-   pendahuluan.rst
    git.rst
    bootstrap.rst
    leaflet.rst
