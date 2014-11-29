@@ -20,13 +20,12 @@ tanggal 29 November 2014.
 
 .. _konten-workshop:
 
-Konten Workshop
+Daftar Materi
 ================
 
 .. toctree::
    :maxdepth: 2
 
-   pendahuluan.rst
    git.rst
    bootstrap.rst
    leaflet.rst

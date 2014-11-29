@@ -11,29 +11,87 @@ Panduan Dasar Github
 Tentang Git
 ==============
 
-Dokumen ini didesain sebagai panduan pada saat **"Workshop WebGIS"**
-oleh PPIDS-UGM dan Klub WebGIS Teknik Geodesi UGM.
+Git merupakan sistem Source Code Management (SCM) dan Version Control
+yang bersifat bebas dan terbuka (*free and open source*). Git didesain
+untuk fleksibilitas manajemen kode dalam skala kecil hingga skala besar,
+sambil tetap menjaga kecepatan proses yang dibutuhkan.
+
+Setiap *'repository'* pada sistem Git merupakan penyimpanan kode mandiri
+yang memiliki kemampuan pelacakan dan *history*, disamping dukungan penuh untuk
+mewadahi kontributor dalam jumlah yang banyak.
+
+Github merupakan layanan repository Git dengan berbagai fungsionalitasnya
+ditambah dengan fungsi-fungsi lain yang memperkaya manajemen kode pada
+Github. Karena kelengkapan fungsi dan sifatnya yang gratis inilah maka Github
+seringkali dipercaya untuk menyimpan kode dari berbagai perangkat lunak *Open
+Source*, dimana Github memungkinkan semua orang untuk turut berkontribusi
+pada suatu project.
+
+Salah satu fungsi Github yang sangat menguntungkan dalam pembuatan halaman
+web adalah: Github dapat digunakan sebagai sebuah hosting gratis, dengan
+sebuah alamat domain yang juga gratis (``namapengguna.github.io``).
 
 
 Menggunakan Github
 ===================
 
-=======================
-Instalasi pada Windows
-=======================
-
-================
-Mengatur SSH Key
-================
-
 ==========================
 Bekerja dengan Repository
 ==========================
 
+Pada bagian ini anda akan mulai menggunakan Github untuk menyimpan kode project anda.
+
+1. Buat akun Github anda melalui alamat `<http://www.github.com>`_
+
+.. image:: _static/images/git_github-webpages.png
+   :align: center
+   :width: 500 pt
+
+2. Lakukan pengaturan yang diperlukan pada halaman `<https://github.com/settings/profile>`_
+
+3. Buat repository baru. Pastikan nama repository yang anda buat mengikuti format ``namapengguna.github.io``.  Apabila nama pengguna anda adalah **'ppids-ugm'** maka nama repository yang akan anda buat ini bernama ``ppids-ugm.github.io``.
+
+.. image:: _static/images/git_new-repo.png
+   :align: center
+
+Beri tanda centang pada **Initialize this repository with README**.
+   
+4. Sekarang, anda telah memiliki sebuah repository baru. Anda dapat mengisikan project anda pada repository ini. Sebagai langkah pertama, buat file baru (klik tanda ``+`` di samping nama repository anda), kemudian copykan kode berikut:
+
+.. highlight:: html
+.. literalinclude:: ./_static/webpage/digitalclock.html
+   :linenos:
+   
+Simpan file baru tersebut dengan nama ``index.html`` dan lakukan *commit* pertama anda.
+
+Sampai di sini, anda telah membuat sebuah repository dan mengisikan sebuah
+file HTML pada repository tersebut. Latihan selanjutnya adalah bagaimana memodifikasi isi dari repository ini untuk menampung
+kode yang akan kita gunakan pada halaman web kita.
+
+.. note:: Tunggu beberapa menit (atau beberapa belas menit) dan Github akan menyajikan halaman web anda pada alamat ``http://<nama-username-anda>.github.io``.
+
+=======================
+Instalasi pada Windows
+=======================
+
+Panduan untuk instalasi Github pada Windows dapat anda temukan `di sini
+<http://www.geekgumbo.com/2010/04/09/installing-git-on-windows/>`_
+
+Setelah melakukan instalasi, anda juga perlu mengatur SSH Key pada Git Bash
+dan pada Akun Github anda. Silahkan ikuti panduan `di alamat ini
+<http://guides.beanstalkapp.com/version-control/git-on-windows.html>`_.
 
 
 
-.. _ref-git: 
+What's Next?
+=============
+
+Pembahasan mengenai Github tidak selesai sampai di sini. Rujukan di bagian
+bawah halaman ini dapat anda gunakan untuk mempelajari fungsi-fungsi lain dari
+Github, terutama apabila anda bekerja dalam sebuah project.
+
+
+.. _ref-git:
 
 Rujukan
 =======
@@ -45,5 +103,6 @@ Rujukan
 
 
 .. raw:: latex
-   
+
    \pagebreak[4]
+
