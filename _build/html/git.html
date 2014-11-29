@@ -215,7 +215,7 @@ sambil tetap menjaga kecepatan proses yang dibutuhkan.</p>
 <p>Setiap <em>&#8216;repository&#8217;</em> pada sistem Git merupakan penyimpanan kode mandiri
 yang memiliki kemampuan pelacakan dan <em>history</em>, disamping dukungan penuh untuk
 mewadahi kontributor dalam jumlah yang banyak.</p>
-<p>Github merupakan layanan repository Git dengan berbagai fungsionalitasnya
+<p><strong>Github</strong> merupakan layanan repository Git dengan berbagai fungsionalitasnya
 ditambah dengan fungsi-fungsi lain yang memperkaya manajemen kode pada
 Github. Karena kelengkapan fungsi dan sifatnya yang gratis inilah maka Github
 seringkali dipercaya untuk menyimpan kode dari berbagai perangkat lunak <em>Open
@@ -326,12 +326,12 @@ pada jendela command yang muncul.</p>
 <h3>Melakukan kloning repository<a class="headerlink" href="#melakukan-kloning-repository" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
 <li><p class="first">Pada halaman web repository anda, cari menu bertuliskan <code class="docutils literal"><span class="pre">SSH</span> <span class="pre">Clone</span> <span class="pre">URL</span></code> pada bagian kanan. Copykan teks pada kotak yang disediakan. Teks tersebut terlihat seperti ini:</p>
-<div class="highlight-html"><div class="highlight"><pre>``git@github.com:ppids-ugm/ppids-ugm.github.io.git``
+<div class="highlight-html"><div class="highlight"><pre>git@github.com:ppids-ugm/ppids-ugm.github.io.git
 </pre></div>
 </div>
 </li>
 <li><p class="first">Buka <code class="docutils literal"><span class="pre">Git</span> <span class="pre">Bash</span></code> anda, kemudian ketikkan perintah:</p>
-<div class="highlight-html"><div class="highlight"><pre>**git clone** git@github.com:ppids-ugm/ppids-ugm.github.io.git
+<div class="highlight-html"><div class="highlight"><pre>git clone git@github.com:ppids-ugm/ppids-ugm.github.io.git
 </pre></div>
 </div>
 </li>
@@ -346,14 +346,14 @@ pada jendela command yang muncul.</p>
 </div>
 </li>
 </ol>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
 <p class="last">Rangkaian perintah berikut sangat penting untuk anda ingat</p>
 </div>
 <ol class="arabic simple" start="5">
 <li>Ketikkan perintah <code class="docutils literal"><span class="pre">git</span> <span class="pre">pull</span></code>. Perintah ini berfungsi untuk mensinkronkan repository pada github dengan repository lokal anda. Apabila didapati ada perubahan pada repository Github, perubahan tersebut akan diterapkan pada repository lokal.</li>
 <li>Ketikkan perintah <code class="docutils literal"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">--all</span></code>. Perintah ini digunakan apabila anda menambahkan file baru pada repository lokal anda dan ingin agar file ini juga tersimpan pada repository Github</li>
-<li>Ketikkan perintah <code class="docutils literal"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-am</span> <span class="pre">&quot;commit</span> <span class="pre">pertama&quot;</span></code>. Perintah ini digunakan untuk menyimpan perubahan yang anda lakukan pada repository lokal. Perubahan ini akan disimpan pada <em>stage</em>, dan belum berpengaruh pada repository anda di Github.</li>
+<li>Ketikkan perintah <code class="docutils literal"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-am</span> <span class="pre">&quot;commit</span> <span class="pre">pertama&quot;</span></code>. Perintah ini digunakan untuk menyimpan perubahan yang anda lakukan pada repository lokal. Perubahan ini akan disimpan pada <em>stage</em>, dan belum berpengaruh pada repository anda di Github. Perintah dalam tanda kutip adalah pesan yang akan tersimpan setiap kali anda melakukan <code class="docutils literal"><span class="pre">commit</span></code>. Gunakan pesan ini sebagai penanda perubahan yang telah anda lakukan pada <em>commit</em> tersebut</li>
 <li>Ketikkan perintah <code class="docutils literal"><span class="pre">git</span> <span class="pre">push</span></code>. Perintah ini digunakan untuk &#8216;mendorong&#8217; perubahan yang telah anda lakukan di repository lokal ke repository pada Github</li>
 </ol>
 <p>Buka halaman web repository anda pada Github dan pastikan bahwa file yang anda buat (<code class="docutils literal"><span class="pre">latihan-git.txt</span></code>) telah ditambahkan.</p>

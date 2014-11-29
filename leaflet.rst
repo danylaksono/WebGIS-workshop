@@ -64,6 +64,8 @@ What's Next?
 
 Anda telah mempelajari mengenai Github, Bootstrap, dan Leaflet. Ketiga komponen ini dapat digunakan sebagai batu loncatan untuk membuat sebuah web map. Tentunya masih banyak fungsi geospasial yang dapat disajikan melalui internet dengan berbagai perangkat lain. Semakin banyak anda berlatih, maka semakin banyak yang dapat anda temukan. Selamat berlatih!
 
+.. image :: _static/images/ahoy.jpg
+   :align: center
 
 
 .. _ref-leaflet:

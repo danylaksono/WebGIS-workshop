@@ -20,7 +20,7 @@ Setiap *'repository'* pada sistem Git merupakan penyimpanan kode mandiri
 yang memiliki kemampuan pelacakan dan *history*, disamping dukungan penuh untuk
 mewadahi kontributor dalam jumlah yang banyak.
 
-Github merupakan layanan repository Git dengan berbagai fungsionalitasnya
+**Github** merupakan layanan repository Git dengan berbagai fungsionalitasnya
 ditambah dengan fungsi-fungsi lain yang memperkaya manajemen kode pada
 Github. Karena kelengkapan fungsi dan sifatnya yang gratis inilah maka Github
 seringkali dipercaya untuk menyimpan kode dari berbagai perangkat lunak *Open
@@ -94,11 +94,11 @@ Melakukan kloning repository
 
 1. Pada halaman web repository anda, cari menu bertuliskan ``SSH Clone URL`` pada bagian kanan. Copykan teks pada kotak yang disediakan. Teks tersebut terlihat seperti ini::
 
-        ``git@github.com:ppids-ugm/ppids-ugm.github.io.git``
+        git@github.com:ppids-ugm/ppids-ugm.github.io.git
 
 2. Buka ``Git Bash`` anda, kemudian ketikkan perintah::
 
-        **git clone** git@github.com:ppids-ugm/ppids-ugm.github.io.git
+        git clone git@github.com:ppids-ugm/ppids-ugm.github.io.git
         
 (sesuaikan dengan teks yang telah anda copy dari repository anda masing-masing. Ganti ``ppids-ugm`` di atas dengan  ``username-anda``)
 
@@ -108,13 +108,13 @@ Melakukan kloning repository
 
         File ini ditambahkan dari repositori lokal
 
-.. warning:: Rangkaian perintah berikut sangat penting untuk anda ingat
+.. danger:: Rangkaian perintah berikut sangat penting untuk anda ingat
 
 5. Ketikkan perintah ``git pull``. Perintah ini berfungsi untuk mensinkronkan repository pada github dengan repository lokal anda. Apabila didapati ada perubahan pada repository Github, perubahan tersebut akan diterapkan pada repository lokal.
 
 6. Ketikkan perintah ``git add --all``. Perintah ini digunakan apabila anda menambahkan file baru pada repository lokal anda dan ingin agar file ini juga tersimpan pada repository Github
 
-7. Ketikkan perintah ``git commit -am "commit pertama"``. Perintah ini digunakan untuk menyimpan perubahan yang anda lakukan pada repository lokal. Perubahan ini akan disimpan pada *stage*, dan belum berpengaruh pada repository anda di Github.
+7. Ketikkan perintah ``git commit -am "commit pertama"``. Perintah ini digunakan untuk menyimpan perubahan yang anda lakukan pada repository lokal. Perubahan ini akan disimpan pada *stage*, dan belum berpengaruh pada repository anda di Github. Perintah dalam tanda kutip adalah pesan yang akan tersimpan setiap kali anda melakukan ``commit``. Gunakan pesan ini sebagai penanda perubahan yang telah anda lakukan pada *commit* tersebut
 
 8. Ketikkan perintah ``git push``. Perintah ini digunakan untuk 'mendorong' perubahan yang telah anda lakukan di repository lokal ke repository pada Github
 
