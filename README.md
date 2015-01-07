@@ -1,4 +1,4 @@
 WebGIS-workshop
 ===============
 
-Thanks to Maning Sambale and the team from ESSC which inspire the development of this module
+Thanks to Maning Sambale and the team from ESSC who inspire the development of this module
